@@ -93,6 +93,7 @@ export default {
       this.squares.fill(null);
       this.showModal = false;
       this.$session.set('board', JSON.stringify(this.squares));
+      this.$session.set('player', this.player);
     }
   },
   async mounted() {
